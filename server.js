@@ -1,11 +1,11 @@
 import dotenv from "dotenv"
 dotenv.config()
 import express from "express";
-// import corsHeaders from "./middleware/cors.js";
-// import {
-//   createErrorMissingPath,
-//   errorMiddleware,
-// } from "./middleware/errors.js";
+import corsHeaders from "./middleware/cors.js";
+import {
+  createErrorMissingPath,
+  errorMiddleware,
+ } from "./middleware/errors.js";
 // import wardrobeRouter from "./routes/wardrobe.js";
 // import usersRouter from "./routes/users.js"
 
@@ -27,7 +27,7 @@ app.use(corsHeaders);
 // TODO app.use("/wardrobe", wardrobeRouter);
 // TODO app.use("/users",usersRouter)
 
-// TODO app.use("*", createErrorMissingPath);
+app.use("*", createErrorMissingPath);
 
 //function that will send a response if there is an error
 app.use(errorMiddleware);
