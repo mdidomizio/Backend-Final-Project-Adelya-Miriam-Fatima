@@ -4,7 +4,7 @@ let connection = {
   host: "localhost",
   port: 5432,
   database: "myrecipesdatabase",
-  user: "adelyanasretdinova",
+  user: process.env.DB_USERNAME,
   password: process.env.DB_PW,
 };
 
