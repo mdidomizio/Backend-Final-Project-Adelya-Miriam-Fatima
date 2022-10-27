@@ -55,7 +55,7 @@ CREATE TABLE recipes (
         REFERENCES users(id)
     );
 
-    INSERT INTO recipes (id, nameRecipe, mealType, mealOrigin, ingredients1, ingredients2, ingredients3, ingredients4, ingredients5, ingredients6, ingredients7, ingredients8, ingredients9, ingredients10, measurement1, measurement2, measurement3, measurement4, measurement5, measurement6, measurement7, measurement8, measurement9, measurement10, instruction, userid) VALUES (gen_random_uuid(), 'Fettuccine Alfredo', '', 'American', 'Fettucine', 'Heavy Cream', 'butter', 'Parmesan', 'Prsley', 'Black Pepper', '', '', '', '', '1lb', '1/2 cup', '1/2 cup', '1/2 cup', '2 tbsp', '', '', '', '', '', 'Cook pasta according to package instructions in a large pot of boiling water and salt.
+INSERT INTO recipes (id, nameRecipe, mealType, mealOrigin, ingredients1, ingredients2, ingredients3, ingredients4, ingredients5, ingredients6, ingredients7, ingredients8, ingredients9, ingredients10, measurement1, measurement2, measurement3, measurement4, measurement5, measurement6, measurement7, measurement8, measurement9, measurement10, instruction, url, userid) VALUES (gen_random_uuid(), 'Fettuccine Alfredo', '', 'American', 'Fettucine', 'Heavy Cream', 'butter', 'Parmesan', 'Prsley', 'Black Pepper', '', '', '', '', '1lb', '1/2 cup', '1/2 cup', '1/2 cup', '2 tbsp', '', '', '', '', '', 'Cook pasta according to package instructions in a large pot of boiling water and salt.
 Add heavy cream and butter to a large skillet over medium heat until the cream bubbles and the butter melts.
 Whisk in parmesan and add seasoning (salt and black pepper).
 Let the sauce thicken slightly and then add the pasta and toss until coated in sauce.
