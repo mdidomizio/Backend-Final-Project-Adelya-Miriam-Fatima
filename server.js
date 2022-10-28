@@ -11,7 +11,7 @@ import {
 
 //create an instance of the server:
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 9000;
 
 //middleware from express:
 //tell the server to look for static files (images) in the folder public
