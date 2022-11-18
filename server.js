@@ -6,7 +6,7 @@ import {
   createErrorMissingPath,
   errorMiddleware,
 } from "./middleware/errors.js";
-import wardrobeRouter from "./routes/wardrobe.js";
+import favoritesRouter from "./routes/favorites.js";
 import usersRouter from "./routes/users.js";
 
 //create an instance of the server:
