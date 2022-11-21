@@ -1,6 +1,8 @@
 import { Router } from "express";
 
 import loggedInToken from "../middleware/auth.js";
+import { createFavoritesEntry } from "../controllers/favorites.js";
+
 const router = Router();
 
 router
