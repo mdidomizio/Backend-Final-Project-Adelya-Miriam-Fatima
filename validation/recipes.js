@@ -259,7 +259,6 @@ export const validCreateEntry = [
     .trim()
     .escape(),
   
-  
     check("instruction")
       .not()
       .isEmpty()
@@ -270,3 +269,18 @@ export const validCreateEntry = [
       .trim()
       .escape(),
   ];
+
+  export const validUpdateEntry = [...validCreateEntry,
+    check('id')
+      .custom((value, { req }) => {
+        // we can add a custom check for the value of the id here or in the controller
+        if (value !== req.params.id) {
+          throw new Error('mismatch')
+        } else {
+          return value
+        }
+      })]
+
+      export const validPathGetRecipeEntry = [
+        check("id").trim().isUUID()
+      ]

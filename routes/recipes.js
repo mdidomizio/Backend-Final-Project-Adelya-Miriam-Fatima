@@ -6,12 +6,10 @@ import {
   postCreateRecipeData,
   getRecipeById
 } from "../controllers/recipes.js";
-import { validCreateEntry, validUpdateEntry, validPathGetWardrobeEntry } from "../validation/recipes.js";
+import { validCreateEntry, validUpdateEntry, validPathGetRecipeEntry } from "../validation/recipes.js";
 import loggedInToken from '../middleware/auth.js'
 
 const router = Router();
-// /wardrobe/ get post
-// /wardrobe/:id put delete
 
 // need validation on post and put
 router
@@ -22,7 +20,7 @@ router
 router
   .route("/:id")
   .put(loggedInToken, validUpdateEntry, putUpdateRecipeData)
-  .delete(loggedInToken, validPathGetWardrobeEntry, deleteRecipeData)
-  .get(validPathGetWardrobeEntry, getRecipeById);
+  .delete(loggedInToken, validPathGetRecipeEntry, deleteRecipeData)
+  .get(validPathGetRecipeEntry, getRecipeById);
 
 export default router;
