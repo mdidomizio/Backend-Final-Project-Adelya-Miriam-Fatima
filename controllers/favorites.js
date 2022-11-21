@@ -1,6 +1,5 @@
 import { validationResult } from "express-validator";
 import { db } from "../database/setup.js";
-import { v4 as uuidv4 } from "uuid";
 
 export const createFavoritesEntry = async (req, res) => {
   console.log(req);
@@ -21,15 +20,15 @@ export const createFavoritesEntry = async (req, res) => {
     // throw createError(400, 'Please enter some data')
   }
 
-  let newUuid = uuidv4();
+  let statement =
+    "INSERT INTO favoriterecipes (idMeal, strMeal, strCategory, strArea, strIngredient1, strIngredient2, strIngredient3, strIngredient4, strIngredient5, strIngredient6, strIngredient7, strIngredient8, strIngredient9, strIngredient10, strIngredient11, strIngredient12, strIngredient13, strIngredient14, strIngredient15, strIngredient16, strIngredient17, strIngredient18, strIngredient19, strIngredient20, strMeasure1, strMeasure2, strMeasure3, strMeasure4, strMeasure5, strMeasure6, strMeasure7, strMeasure8, strMeasure9, strMeasure10, strMeasure11, strMeasure12, strMeasure13, userId)";
+  statement +=
+    "VALUES (${idMeal}, ${strMeal}, ${strCategory}, ${strArea}, ${strIngredient1}, ${strIngredient2}, ${strIngredient3}, ${strIngredient4}, ${strIngredient5}, ${strIngredient6}, ${strIngredient7}, ${strIngredient8}, ${strIngredient9}, ${strIngredient10}, ${strIngredient11}, ${strIngredient12}, ${strIngredient13}, ${strIngredient14}, ${strIngredient15}, ${strIngredient16}, ${strIngredient17}, ${strIngredient18}, ${strIngredient19}, ${strIngredient20}, ${strMeasure1}, ${strMeasure2}, ${strMeasure3}, ${strMeasure4}, ${strMeasure5}, ${strMeasure6}, ${strMeasure7}, ${strMeasure8}, ${strMeasure9}, ${strMeasure10}, ${strMeasure11}, ${strMeasure12}, ${strMeasure13}, ${userId})";
 
   // add a new id:
-  await db.none(
-    // ? Miriam, info about favorites db should be inserted here:
-    "INSERT INTO favorites (id, color, price, currency, size, material, url, descrshort, descrlong, season) VALUES(${id}, ${color}, ${price}, ${currency}, ${size}, ${material}, ${url}, ${descrshort}, ${descrlong}, ${season})",
-    { ...newItem, id: newUuid }
-  );
-  let updatedFavorites = await db.many("SELECT * FROM favorites");
+  await db.none(statement, { ...newItem });
+
+  let updatedFavorites = await db.many("SELECT * FROM favoriterecipes");
 
   res.status(201).json({
     success: true,
