@@ -146,8 +146,8 @@ and it is ready.',
 
 SELECT * FROM recipes;
 
-CREATE TABLE favorite-recipes (
-        idMeal PRIMARY KEY VARCHAR(20) NOT NULL,
+CREATE TABLE favoriterecipes (
+        idMeal VARCHAR(20) NOT NULL,
         strMeal VARCHAR(200) NOT NULL,
         strCategory VARCHAR(200) NOT NULL,
         strArea VARCHAR(200) NOT NULL,
