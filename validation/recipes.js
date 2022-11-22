@@ -83,95 +83,95 @@ export const validCreateEntry = [
     .trim()
     .escape(),
 
-    check("ingredients6")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("ingredients6")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("ingredients7")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("ingredients7")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("ingredients8")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("ingredients8")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("ingredients9")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("ingredients9")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("ingredients10")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("ingredients10")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("ingredients11")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("ingredients11")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("ingredients12")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("ingredients12")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("ingredients13")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("ingredients13")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("ingredients14")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("ingredients14")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("ingredients15")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("ingredients15")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("ingredients16")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("ingredients16")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("ingredients17")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("ingredients17")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("ingredients18")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("ingredients18")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("ingredients19")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("ingredients19")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("ingredients20")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("ingredients20")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
     check("measurement1")
     .not()
@@ -207,95 +207,95 @@ export const validCreateEntry = [
     .trim()
     .escape(),
 
-    check("measurement6")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("measurement6")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("measurement7")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("measurement7")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("measurement8")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("measurement8")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("measurement9")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("measurement9")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("measurement10")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("measurement10")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("measurement11")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("measurement11")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("measurement12")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("measurement12")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("measurement13")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("measurement13")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("measurement14")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("measurement14")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("measurement15")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("measurement15")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("measurement16")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("measurement16")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("measurement17")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("measurement17")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("measurement18")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("measurement18")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("measurement19")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("measurement19")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
 
-    check("measurement20")
-    .isAscii()
-    .optional()
-    .trim()
-    .escape(),
+    // check("measurement20")
+    // .isAscii()
+    // .optional()
+    // .trim()
+    // .escape(),
   
     check("instruction")
       .not()
