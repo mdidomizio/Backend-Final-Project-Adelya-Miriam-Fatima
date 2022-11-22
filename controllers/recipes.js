@@ -94,7 +94,7 @@ export const postCreateRecipeData = async (req, res) => {
       success: true,
       message: `${newRecipeInDB.name} was updated`,
       body: newRecipeInDB,
-    //   alert("Item has been created"),
+      // alert("Recipes has been created")
     });
   } catch (error) {
     console.log(error);

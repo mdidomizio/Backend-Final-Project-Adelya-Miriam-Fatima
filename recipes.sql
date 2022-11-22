@@ -199,4 +199,4 @@ CREATE TABLE favoriterecipes (
         REFERENCES users(id)
         );
 
-SELECT * FROM favorite-recipes;
+SELECT * FROM favoriterecipes;
