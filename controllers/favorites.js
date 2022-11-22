@@ -36,3 +36,20 @@ export const createFavoritesEntry = async (req, res) => {
     data: updatedFavorites,
   });
 };
+
+export const getFavorites = async (req, res) => {
+  try {
+    let dataFromDB = await db.many("SELECT * FROM favoriterecipes");
+    res.status(200).json({
+      message: "Data was found!",
+      success: true,
+      data: dataFromDB,
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({
+      success: false,
+      errors: error.message,
+    });
+  }
+};
