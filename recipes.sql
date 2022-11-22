@@ -100,7 +100,7 @@ and it is ready.',
 SELECT *
 FROM recipes
 
-CREATE TABLE favoriterecipes ( idMeal VARCHAR(20) NOT NULL, strTags VARCHAR(20),
+CREATE TABLE favoriterecipes ( idMeal VARCHAR(200) NOT NULL, strTags VARCHAR(200),
                                                   strMeal VARCHAR(200) NOT NULL,
                                                                        strCategory VARCHAR(200) NOT NULL,
                                                                                                 strArea VARCHAR(200) NOT NULL,
