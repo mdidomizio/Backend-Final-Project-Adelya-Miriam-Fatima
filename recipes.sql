@@ -9,7 +9,7 @@ CREATE DATABASE myrecipesdatabase;
 
 DROP TABLE if EXISTS recipes;
 
-DROP TABLE if EXISTS favorite-recipes;
+DROP TABLE if EXISTS favoriterecipes;
 
 
 DROP TABLE if EXISTS users;
@@ -33,6 +33,29 @@ VALUES ('35ed4f16-b415-4821-a85c-b6de74a3b9f7',
         'Mdd.wit2022@startsteps.de')
 SELECT * FROM users;
 
+
+CREATE TABLE recipes (
+        id UUID PRIMARY KEY,
+        nameRecipe VARCHAR(200) NOT NULL,
+        mealType VARCHAR(200) NOT NULL,
+        mealOrigin VARCHAR(200) NOT NULL,
+        ingredients1 VARCHAR(200) NOT NULL,
+        ingredients2 VARCHAR(200),
+        ingredients3 VARCHAR(200),
+        ingredients4 VARCHAR(200),
+        ingredients5 VARCHAR(200),
+        measurement1 VARCHAR(200) NOT NULL,
+        measurement2 VARCHAR(200),
+        measurement3 VARCHAR(200),
+        measurement4 VARCHAR(200),
+        measurement5 VARCHAR(200),
+        instruction TEXT NOT NULL,
+        url TEXT NOT NULL,
+        userid UUID NOT NULL,
+        CONSTRAINT fk_user
+                FOREIGN KEY(userid) 
+                REFERENCES users(id)
+        );
 
 CREATE TABLE recipes (
         id UUID PRIMARY KEY,
