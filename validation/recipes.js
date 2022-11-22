@@ -66,109 +66,110 @@ export const validCreateEntry = [
     .escape(),
 
     check("ingredients3")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("ingredients4")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("ingredients5")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("ingredients6")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("ingredients7")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("ingredients8")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("ingredients9")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("ingredients10")
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("ingredients11")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("ingredients12")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("ingredients13")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("ingredients14")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("ingredients15")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("ingredients16")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("ingredients17")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("ingredients18")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("ingredients19")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("ingredients20")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
@@ -183,116 +184,116 @@ export const validCreateEntry = [
     .escape(),
 
     check("measurement2")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement3")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement4")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement5")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement6")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement7")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement8")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement9")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement10")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement11")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement12")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement13")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement14")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement15")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement16")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement17")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement18")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement19")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
 
     check("measurement20")
-    .optional()
     .isAscii()
+    .optional()
     .trim()
     .escape(),
   
