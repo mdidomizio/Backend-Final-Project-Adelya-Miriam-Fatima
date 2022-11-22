@@ -6,7 +6,7 @@ import {
   createErrorMissingPath,
   errorMiddleware,
 } from "./middleware/errors.js";
-// import wardrobeRouter from "./routes/wardrobe.js";
+import favoritesRouter from "./routes/favorites.js";
 import usersRouter from "./routes/users.js";
 
 //create an instance of the server:
@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(corsHeaders);
 
 // request handler
-// TODO app.use("/wardrobe", wardrobeRouter);
+app.use("/favorites", favoritesRouter);
 app.use("/users", usersRouter);
 
 app.use("*", createErrorMissingPath);

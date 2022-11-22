@@ -80,6 +80,7 @@ export const loginUser = async (req, res) => {
       res.status(200).json({
         message: "logged in",
         token: token,
+        userId: userFromDb.id,
       });
     } else {
       //or no match of password
