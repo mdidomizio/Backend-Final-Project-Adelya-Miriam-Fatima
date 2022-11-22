@@ -54,3 +54,25 @@ export const getFavorites = async (req, res) => {
     });
   }
 };
+
+export const deleteFavEntry = async (req, res) => {
+  try {
+    let idLink = req.params.id;
+
+    let deleteItem = await db.one(
+      "DELETE FROM favoriterecipes WHERE idMeal =$1 RETURNING *",
+      idLink
+    );
+    res.status(200).json({
+      success: true,
+      message: `${deleteItem.strMeal} is deleted`,
+      body: deleteItem,
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({
+      success: false,
+      errors: error.message,
+    });
+  }
+};
