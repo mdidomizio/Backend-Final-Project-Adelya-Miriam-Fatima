@@ -49,8 +49,8 @@ CREATE TABLE recipes (
         measurement3 VARCHAR(200),
         measurement4 VARCHAR(200),
         measurement5 VARCHAR(200),
-        instruction TEXT NOT NULL,
-        url TEXT NOT NULL,
+        instruction VARCHAR(10485760) NOT NULL,
+        url VARCHAR(2000) NOT NULL,
         userid UUID NOT NULL,
         CONSTRAINT fk_user
                 FOREIGN KEY(userid) 

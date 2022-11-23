@@ -62,24 +62,28 @@ export const validCreateEntry = [
     check("ingredients2")
     .isAscii()
     .optional()
+    // .nullable()
     .trim()
     .escape(),
 
     check("ingredients3")
     .isAscii()
     .optional()
+    //.nullable()
     .trim()
     .escape(),
 
     check("ingredients4")
     .isAscii()
     .optional()
+     // .nullable()
     .trim()
     .escape(),
 
     check("ingredients5")
     .isAscii()
     .optional()
+     // .nullable()
     .trim()
     .escape(),
 
@@ -186,24 +190,28 @@ export const validCreateEntry = [
     check("measurement2")
     .isAscii()
     .optional()
+     // .nullable()
     .trim()
     .escape(),
 
     check("measurement3")
     .isAscii()
     .optional()
+     // .nullable()
     .trim()
     .escape(),
 
     check("measurement4")
     .isAscii()
     .optional()
+     // .nullable()
     .trim()
     .escape(),
 
     check("measurement5")
     .isAscii()
     .optional()
+     // .nullable()
     .trim()
     .escape(),
 
