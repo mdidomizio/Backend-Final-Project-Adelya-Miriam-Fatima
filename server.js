@@ -6,6 +6,7 @@ import {
   createErrorMissingPath,
   errorMiddleware,
 } from "./middleware/errors.js";
+import recipesRouter from "./routes/recipes.js";
 import favoritesRouter from "./routes/favorites.js";
 import usersRouter from "./routes/users.js";
 
@@ -24,6 +25,7 @@ app.use(express.json());
 app.use(corsHeaders);
 
 // request handler
+app.use("/recipes", recipesRouter);
 app.use("/favorites", favoritesRouter);
 app.use("/users", usersRouter);
 

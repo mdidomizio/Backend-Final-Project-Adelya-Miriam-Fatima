@@ -44,6 +44,29 @@ CREATE TABLE recipes (
         ingredients3 VARCHAR(200),
         ingredients4 VARCHAR(200),
         ingredients5 VARCHAR(200),
+        measurement1 VARCHAR(200) NOT NULL,
+        measurement2 VARCHAR(200),
+        measurement3 VARCHAR(200),
+        measurement4 VARCHAR(200),
+        measurement5 VARCHAR(200),
+        instruction VARCHAR(10485760) NOT NULL,
+        url VARCHAR(2000) NOT NULL,
+        userid UUID NOT NULL,
+        CONSTRAINT fk_user
+                FOREIGN KEY(userid) 
+                REFERENCES users(id)
+        );
+
+CREATE TABLE recipes (
+        id UUID PRIMARY KEY,
+        nameRecipe VARCHAR(200) NOT NULL,
+        mealType VARCHAR(200) NOT NULL,
+        mealOrigin VARCHAR(200) NOT NULL,
+        ingredients1 VARCHAR(200) NOT NULL,
+        ingredients2 VARCHAR(200),
+        ingredients3 VARCHAR(200),
+        ingredients4 VARCHAR(200),
+        ingredients5 VARCHAR(200),
         ingredients6 VARCHAR(200),
         ingredients7 VARCHAR(200),
         ingredients8 VARCHAR(200),
@@ -200,6 +223,5 @@ CREATE TABLE favoriterecipes (
                 FOREIGN KEY(userid) 
                 REFERENCES users(id) 
         );
-
+        
 SELECT * FROM favoriterecipes;
-
