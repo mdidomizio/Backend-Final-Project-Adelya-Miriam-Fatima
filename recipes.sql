@@ -120,7 +120,7 @@ VALUES (gen_random_uuid(),
         'Heavy Cream',
         'butter',
         'Parmesan',
-        'Prsley',
+        'Parsley',
         'Black Pepper',
         '',
         '',
@@ -169,8 +169,10 @@ and it is ready.',
 
 SELECT * FROM recipes;
 
-CREATE TABLE favoriterecipes (
-        idMeal VARCHAR(20) NOT NULL,
+
+CREATE TABLE favoriterecipes ( 
+        idMeal VARCHAR(200) NOT NULL, 
+        strTags VARCHAR(200),
         strMeal VARCHAR(200) NOT NULL,
         strCategory VARCHAR(200) NOT NULL,
         strArea VARCHAR(200) NOT NULL,
@@ -214,12 +216,12 @@ CREATE TABLE favoriterecipes (
         strMeasure18 VARCHAR(200),
         strMeasure19 VARCHAR(200),
         strMeasure20 VARCHAR(200),
-        strInstructions TEXT NOT NULL,
-        strMealThumb TEXT NOT NULL,
+        strInstructions VARCHAR(2000000),
+        strMealThumb VARCHAR(20000),
         userid UUID NOT NULL,
         CONSTRAINT fk_user
                 FOREIGN KEY(userid) 
-        REFERENCES users(id)
+                REFERENCES users(id) 
         );
-
+        
 SELECT * FROM favoriterecipes;

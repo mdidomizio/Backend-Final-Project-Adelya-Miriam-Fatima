@@ -7,6 +7,7 @@ import {
   errorMiddleware,
 } from "./middleware/errors.js";
 import recipesRouter from "./routes/recipes.js";
+import favoritesRouter from "./routes/favorites.js";
 import usersRouter from "./routes/users.js";
 
 //create an instance of the server:
@@ -25,6 +26,7 @@ app.use(corsHeaders);
 
 // request handler
 app.use("/recipes", recipesRouter);
+app.use("/favorites", favoritesRouter);
 app.use("/users", usersRouter);
 
 app.use("*", createErrorMissingPath);
