@@ -1,7 +1,7 @@
 import { check } from "express-validator";
 
 export const validCreateEntry = [
-    check("nameRecipe")
+    check("namerecipe")
       .not()
       .isEmpty()
       .isAscii()
@@ -11,7 +11,7 @@ export const validCreateEntry = [
       .trim()
       .escape(),
   
-    check("mealType")
+    check("mealtype")
       .isIn(["Beef",
       "Breakfast",
       "Chicken",
@@ -27,7 +27,7 @@ export const validCreateEntry = [
       .trim()
       .escape(),
 
-      check("mealOrigin")
+      check("mealorigin")
       .isIn(["American",
       "British",
       "Canadian",
@@ -309,6 +309,8 @@ export const validCreateEntry = [
       .not()
       .isEmpty()
       .isAscii()
+      // .isAlphanumeric()
+      //.length({min:1, max: undefined})
       .withMessage(
         "Please enter a description of the recipes´s preparation. It should be a text"
       )
