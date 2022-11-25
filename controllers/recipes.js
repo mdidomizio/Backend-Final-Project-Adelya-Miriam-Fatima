@@ -86,7 +86,7 @@ export const postCreateRecipeData = async (req, res) => {
 
   try {
     let newRecipeInDB = await db.one(
-      'INSERT INTO recipes VALUES(${id}, ${nameRecipe}, ${mealType}, ${mealOrigin}, ${ingredients1}, ${ingredients2}, ${ingredients3}, ${ingredients4}, ${ingredients5}, ${measurement1}, ${measurement2}, ${measurement3}, ${measurement4}, ${measurement5}, ${instruction}, ${url}, ${userid}) RETURNING *',
+      'INSERT INTO recipes VALUES(${id}, ${namerecipe}, ${mealtype}, ${mealorigin}, ${ingredients1}, ${ingredients2}, ${ingredients3}, ${ingredients4}, ${ingredients5}, ${measurement1}, ${measurement2}, ${measurement3}, ${measurement4}, ${measurement5}, ${instruction}, ${url}, ${userid}) RETURNING *',
       { ...newRecipe, id: newId, userid: userId }
     );
 
@@ -122,7 +122,7 @@ export const putUpdateRecipeData = async (req, res) => {
     
     // change to update! Here we use the id from the body to find the item to update
     let idInDB = await db.one(
-        'UPDATE recipes SET nameRecipe= ${nameRecipe}, mealType= ${mealType}, url= ${url}, mealOrigin= ${mealOrigin}, ingredients1 = ${ingredients1}, ingredients2= ${ingredients2},ingredients3 =${ingredients3}, ingredients4= ${ingredients4}, ingredients5=${ingredients5}, measurement1=${measurement1}, measurement2=${measurement2}, measurement3=${measurement3}, measurement4=${measurement4}, measurement5=${measurement5}, instruction=${instruction} WHERE id = ${id} RETURNING *',
+        'UPDATE recipes SET namerecipe= ${namerecipe}, mealtype= ${mealtype}, url= ${url}, mealorigin= ${mealorigin}, ingredients1 = ${ingredients1}, ingredients2= ${ingredients2},ingredients3 =${ingredients3}, ingredients4= ${ingredients4}, ingredients5=${ingredients5}, measurement1=${measurement1}, measurement2=${measurement2}, measurement3=${measurement3}, measurement4=${measurement4}, measurement5=${measurement5}, instruction=${instruction} WHERE id = ${id} RETURNING *',
         req.body
     );
 
