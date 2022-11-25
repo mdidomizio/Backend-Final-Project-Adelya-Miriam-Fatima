@@ -308,7 +308,7 @@ export const validCreateEntry = [
     check("instruction")
       .not()
       .isEmpty()
-      .isAscii()
+      //.isAscii()
       // .isAlphanumeric()
       //.length({min:1, max: undefined})
       .withMessage(
